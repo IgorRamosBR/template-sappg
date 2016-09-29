@@ -23,16 +23,33 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-default" style="margin-bottom: 0;">
+        <nav class="navbar navbar-inverse" role="navigation" style="margin-bottom:0; border-radius: 0; padding-bottom:5px;" >
             <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" href="#menu-toggle" id="menu-toggle" data-target="#bs-example-navbar-collapse-1">
+                <div class="navbar-header" >
+                    <button type="button" id="menu-toggle" class="navbar-toggle collapsed"  data-target="#menu-toggle" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">SAPPG</a>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="images/logo-sappg-branco.png">
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+   
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mytho <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Minha Conta</a></li>
+                                <li><a href="#">Configurações</a></li>
+                                <li><a href="#">Logout</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -41,30 +58,30 @@
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                       UEZO
+            <div class="circular"></div>
+    
+            <ul class="menu-sanfona" class="list-group">
+                <li tabindex="0"> <span class="item">Programas</span>
+                    <ul>
+                        <li><span><a href="#test">Programas</a></span></li>
+                        <li><span>Disciplinas</span></li>
+                        <li><span>Turmas</span></li>
+                        <li><span>Informações</span></li>
+                        
+                    </ul>
                 </li>
-                <li>
-                    <a href="#">Dashboard</a>
+                <li tabindex="1"> <span class="item">Pessoas</span>
+                    <ul>
+                        <li><span>Discentes</span></li>
+                        <li><span>Docentes</span></li>
+                        
+                    </ul>
                 </li>
-                <li>
-                    <a href="#">Shortcuts</a>
-                </li>
-                <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                <li tabindex="2"> <span class="item">Comunicação</span>
+                    <ul>
+                        <li><span>Requerimentos</span></li>
+                        <li><span>Mensagens</span></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -76,6 +93,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Simple Sidebar</h1>
+                        <p class="menu-title">SAAPG</p>
                         <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
                         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
                     </div>
